@@ -196,7 +196,8 @@
 
     <script>
         // Lockout start time: Friday, January 17, 2026 @ 4:37 PM PHT (UTC+8)
-        const lockoutStart = new Date('2026-01-17T16:37:00+08:00');
+        // Using UTC: 4:37 PM PHT = 8:37 AM UTC (PHT is UTC+8)
+        const lockoutStart = new Date(Date.UTC(2026, 0, 17, 8, 37, 0));
 
         const milestones = [
             { hours: 1, text: "1 hour. Still waiting..." },
